@@ -33,7 +33,7 @@ const updateexchangerate = async () => {
   let amtval = amount.value;
   if (amtval === "" || amtval < 1) {
     amtval = 1;
-    amount.value = "1"; // ← you had amtval.value, wrong!
+    amount.value = "1"; 
   }
 
   // API expects lowercase base currency
@@ -75,3 +75,4 @@ amountInput.addEventListener("keypress", (evt) => {
   window.addEventListener("load",()=>{
     updateexchangerate();
   })
+
